@@ -1,210 +1,133 @@
 ## Svelte Presentation
 
-React is one of many frameworks which could be used for web app development, here is a brief introduction to an alternative which is popular with developers.
+1. Title: Sora — The Future of AI Video
 
-Most of the information here is drawn from the [Svelte Website](https://svelte.dev/) and if this taster is appealing you should follow up by going through the full tutorial sequence on that site.
+“Welcome everyone. Today, I’m excited to present Sora — OpenAI's groundbreaking model for AI video generation. With Sora, we're breaking the barriers between text, images, and videos, enabling anyone to create high-quality video content from simple text prompts.”
+
 
 ![Slide1](/presentation/src/assets/page1/images/Slide1.PNG)
 
-Presentation front page with presenter names and appropriate theme.
+2. What is Sora?
+
+“Sora is a revolutionary AI model that generates realistic videos from text. By inputting a simple description, Sora can transform it into a video with cinematic-quality visuals. It combines powerful diffusion models and transformer networks to create videos that are not just realistic but also contextually rich.”
+
 
 ![Slide2](/presentation/src/assets/page1/images/Slide2.PNG)
 
-React initially seems like a single framework so it may initially look as though Svelte is a framework and SvelteKit is some kind of development environment.
+3. Vision & Impact
 
-However, Svelte is actually a compliler to javascript modules which produces a very small code footprint.  SvelteKit is the framework.
+“What sets Sora apart is its impact on several industries — from entertainment to education, advertising to augmented reality. The ability to generate video content from text democratizes video creation. No longer do you need professional equipment or a team of videographers to create high-quality video content.”
 
-Come to think of it React is not sufficient on its own you customarily include React Dom and may need other elements such as React Router.
+“Sora is paving the way for the future of content creation, allowing creators to express ideas more freely and efficiently.”
 
-### Svelte
 
 ![Slide3](/presentation/src/assets/page1/images/Slide3.PNG)
 
-The Svelte website has a good sequence of tutorials presented within an interactive online editor.
+4. Architecture Overview
 
-The four sections discuss basic and advanced Svelte and then basic and advanced SvelteKit framework.
+“Let’s take a look at the architecture of Sora. It is based on a powerful encoder-decoder structure. The encoder processes the text input and transforms it into a latent representation of the video. The decoder then reconstructs this representation into the final high-resolution video.”
 
-I hope that by following quickly through the first few sections of the svelte tutorial and the first few of the basic SvelteKit we can gain enough awareness of the syntax to follow through the operation of the svelte demo application.
+“This architecture leverages diffusion models to ensure that each frame flows smoothly, maintaining temporal and spatial consistency throughout the video.”
+
 
 ![Slide4](/presentation/src/assets/page1/images/Slide4.PNG)
 
-First the svelte syntax.  The page has a script section and an html like section.
+5. Workflow
 
-A script variable, name, can be passed as a property into the presentation section.  Since it is a string, string functions can be applied to it.
+“The process of using Sora is straightforward: First, you provide a text prompt — something like ‘A drone flying over Tokyo at night.’ Next, the model generates a latent video representation. This representation is then decoded into a full video output, which can be downloaded and shared.”
+
+“This is all done with advanced AI algorithms that understand not just words but the context, motion, and physics within your description.”
+
 
 ![Slide5](/presentation/src/assets/page1/images/Slide5.PNG)
 
-Variables can also be included as properties in the attributes of an html element.
+6. Example Prompts
 
-Where the variable name is chosen to match the attribute name a short form syntax can be used.
+“Let’s look at some example prompts that would generate interesting videos.”
+
+“You can ask Sora for: ‘A golden retriever surfing in Hawaii’ or ‘A futuristic city at night with neon lights and flying cars.’ Or even something more complex, like ‘A dragon flying over snowy mountains under a dramatic sky.’ These are just some of the creative possibilities Sora offers.”
+
 
 ![Slide6](/presentation/src/assets/page1/images/Slide6.PNG)
 
-Style tags placed in a file apply their style to the scope of the file.
+7. Temporal Understanding
+
+“One of the standout features of Sora is its ability to maintain temporal consistency. This means that Sora understands motion and physics, allowing it to produce smooth transitions between frames. When generating a video, it makes sure the movement is realistic and the video feels natural, whether it’s a drone shot or a dynamic scene with moving characters.”
+
 
 ![Slide7](/presentation/src/assets/page1/images/Slide7.PNG)
 
-If a paragraph is imported into the page from a separate file, it does not pick up the style from the importing files style tags.
+8. Comparison
+
+“Let’s compare Sora with other AI video generation models. Models like Runway Gen-2 excel in short, stable videos. However, Sora is unique because it can generate longer videos while maintaining high quality and contextual consistency throughout.”
+
+“Another comparison is with Pika. While Pika is great for style-based video generation, Sora offers more flexibility and realism, making it the better choice for diverse video creation.”
+
 
 ![Slide8](/presentation/src/assets/page1/images/Slide8.PNG)
 
-Whilst React would try to interpret `<strong/>` as JSX, svelte does not interpret this by default so the result of line 5 is to print the text literally.
+9. Integration (API)
 
-The inclusion on line 6 of @html causes the html to be interpreted and produce bold text.
+“Sora is not just a standalone tool. It integrates seamlessly with web applications via a simple REST API. This means developers can integrate Sora's capabilities into platforms like React, Python, or even JavaScript-based websites.”
+
+“For example, you can make a POST request to the endpoint /api/sora/generate with a prompt and duration, and Sora will return the generated video link and metadata.”
+
 
 ![Slide9](/presentation/src/assets/page1/images/Slide9.PNG)
 
-This script provides a counter defined outside a function which increments it.   No need to use hooks at this point.
+10. UI Mockup
 
-The button element has an on attribute for mouse click which will call the increment function when the mouse is clicked.
+“Sora's user interface is designed for ease of use. On the left, users simply input their text prompts, and on the right, they can see a preview of the generated video.”
 
-Line 11 is a standard javascript short format if then else structure which ensures that if the count is exactly 1 the button will display the singular term of 'time'.
+“This simple and intuitive UI makes it accessible for both developers and creators with no technical background, empowering anyone to create high-quality video content.”
+
 
 ![Slide10](/presentation/src/assets/page1/images/Slide10.PNG)
 
-The $: syntax introduces a reactive variable which will result in an update of the display when it is changed.  This maintains the value of doubled as count * 2.  Note that the $: syntax is not needed in the display line 15.
+11. Developer Ecosystem
+
+“Sora is more than just a tool for creating videos. It is an ecosystem that developers can use to build custom applications on top of it. Whether you're building a creative platform or a video streaming service, Sora’s integration is smooth and scalable.”
+
+“It supports cloud hosting, meaning that large-scale video generation is feasible for any developer, regardless of their project’s size.”
+
 
 ![Slide11](/presentation/src/assets/page1/images/Slide11.PNG)
 
-The last basic example reviewed here is the array example.  The svelte syntax does not introduce much new, but this is a good reminder of some javascript syntax.
+12. Ethics & Safety
 
-... spreads the array elements out and then another element is added.  This makes numbers in line 5 change when the addNumber function is called.
-Some syntax variations which might look ok would not cause a change in a manner which would trigger a change in display through the reactive variable 'sum'.
+“As with any powerful tool, Sora is designed with ethical considerations in mind. We’ve made sure to implement safeguards that prevent the generation of deepfakes and harmful content.”
 
-A reducer is a function which acts on an array to evaluate a single numerical result, in this case the sum of array elements.
+“Transparency and user privacy are key pillars of Sora’s development. User inputs are anonymized, and data security is strictly followed, ensuring responsible AI use.”
 
-A join produces a string representation of the array whith a selected delimiter.
 
 ![Slide12](/presentation/src/assets/page1/images/Slide12.PNG)
 
-To learn more you should continue to work through the svelte tutorial examples yourself, but for now jump forward to get an introduction to the SvelteKit syntax.
+13. Use Cases
 
-### SvelteKit
+“Now, let’s look at the incredible use cases for Sora. It’s already transforming industries such as:
+
+Film and advertising: Instant content creation for movie studios and brands.
+
+Education and simulation: Realistic, immersive video creation for training and learning.
+
+Creative design: Artists and designers can visualize and create scenes that would otherwise be impossible to film.”
+
 
 ![Slide13](/presentation/src/assets/page1/images/Slide13.PNG)
 
-The website lists some of the features provided by SvelteKit.  This includes routing (without needing a separate router) and server side rendering.  Svelte will need to run on a suitable server.  For development the Vite development server is appropriate.
+14. Future Directions
 
-The structure of the project directory includes a `src` folder with the app.html and a routes folder with at least on `+pages.svelte` file.
+“Looking ahead, Sora will evolve to handle real-time video generation. Imagine the possibilities for live events or interactive experiences where videos are created on-the-fly based on user input.”
+
+“Sora will continue to improve its ability to handle complex scenarios, including maintaining character consistency and adding even more flexibility in video creation.”
+
 
 ![Slide14](/presentation/src/assets/page1/images/Slide14.PNG)
 
-The html file contains a `<div>` which displays %sveltekit.body% this is the location where the svelteKit output will be rendered.
+15. Summary
 
-There is no link required, the file which provides the output is the first `+page.svelte` in the routes folder.
+“In summary, Sora is a game-changer for content creation. It lowers the barriers for anyone to create professional-quality videos simply by describing them. As AI continues to evolve, Sora will be at the forefront of this creative revolution, enabling individuals and industries to express their visions in ways never before possible.”
+
 
 ![Slide15](/presentation/src/assets/page1/images/Slide15.PNG)
-
-A second display page can be added within a nested folder within routes.  The name of the folder, 'about' will provide the adress for navigation.  So this is unlike a web page navigation there is not an http://filename call.
-
-The routing syntax is simple and straightforward.
-
-![Slide16](/presentation/src/assets/page1/images/Slide16.PNG)
-
-It would not be efficient to include the same navigation code on every page which needed it so the code can be incorporated into a layout.
-
-The `<slot/>` is the location on the layout where the content from the individual pages will be rendered.
-
-![Slide17](/presentation/src/assets/page1/images/Slide17.PNG)
-
-Hopefully that is enough to be able to read through a demo file running in a docker development container.
-
-## Demo App
-
-![Slide18](/presentation/src/assets/page1/images/Slide18.PNG)
-
-Start Docker desktop.
-
-Create and empty folder and then using CTRL + P ask the remote container plugin to open it in a container.  Follow the prompts to select a node plus typescript container and allow time for this to download content.
-
-When the container is ready check the version of node.
-
-Now create a svelte app using the latest svelte version.
-
-Follow the choice which creates the demo app.
-
-![Slide19](/presentation/src/assets/page1/images/Slide19.PNG)
-
-Make choices to use Typescript syntax and to add the prettier code formatter.
-
-![Slide20](/presentation/src/assets/page1/images/Slide20.PNG)
-
-With no further options selected the project comes to completion.
-
-There are a range of plug-ins for svelte which can be reviewed on github, however these are not required for the simple demonstration.
-
-![Slide21](/presentation/src/assets/page1/images/Slide21.PNG)
-
-The package json file reflects the available vite scripts and the dependancies.
-
-![Slide22](/presentation/src/assets/page1/images/Slide22.PNG)
-
-Change directory to the application folder and install the dependancies.
-
-After a wait the project is ready to run on the vite server with npm run dev.
-
-![Slide23](/presentation/src/assets/page1/images/Slide23.PNG)
-
-The demo includes a navigation menu, a welcome image, some text and a counter.  These elements will be brought in from smaller files.
-
-![Slide24](/presentation/src/assets/page1/images/Slide24.PNG)
-
-The Sverdle demo game mimics the operation of the popular wordle site which gives the option to guess a five letter word.  Correctly guessed letters have a border added and correctly placed letters are highlighted.
-
-Incorrectly guesse letters are grayed out on the alphabet display.
-
-![Slide25](/presentation/src/assets/page1/images/Slide25.PNG)
-
-An example game is played out here from the first guess of 'bread' to the final correct word 'icily'.  Because the source words are provided from the server there is nothing in the browser which could allow the player to cheat.
-
-![Slide26](/presentation/src/assets/page1/images/Slide26.PNG)
-
-Looking over the demo code the html has a place for sveltekit head and sveltekit body.  There is nothing of the displayed content here.
-
-![Slide27](/presentation/src/assets/page1/images/Slide27.PNG)
-
-The layout provides the common content for all pages which includes text imnported from Header.svelte.
-
-The `<slot/>` in the main section is where individual page details will render.
-
-![Slide28](/presentation/src/assets/page1/images/Slide28.PNG)
-
-The home page is the first `+page.svelte` in the routes folder.
-
-This includes the header information with the title 'home'.
-
-The counter is read from the counter file.  There is no need for an import statement, just use the `<Counter />` element reference.
-
-![Slide29](/presentation/src/assets/page1/images/Slide29.PNG)
-
-The navigation bar is in the Header file which is called into the top of the layout for all pages in the app.
-
-![Slide30](/presentation/src/assets/page1/images/Slide30.PNG)
-
-As with React, the application can be built on Vite and previewed to check that it is working.  The use of a different port indicates that this is a build preview.
-
-![Slide31](/presentation/src/assets/page1/images/Slide31.PNG)
-
-Unlike react, the output is not an html/javascript file which can run from the live server.  
-
-To deploy the user must first install an adapter and then edit the svelte.config.js file to mathch the deployment target, such as a node server in this example.
-
-
-![Slide32](/presentation/src/assets/page1/images/Slide32.PNG)
-
-A number of deployment targets exist and this does include a static HTML page where this is right for the application.
-
-![Slide33](/presentation/src/assets/page1/images/Slide33.PNG)
-
-Looking at use cases on the svelte website it is evident that well functioned applications can be produced.
-
-![Slide34](/presentation/src/assets/page1/images/Slide34.PNG)
-
-Here data visualisation is shown on a svelte page.
-
-The companies are real and significant, but tend not to be the larger companies which are still using the commercially supported frameworks such as react.
-
-![Slide35](/presentation/src/assets/page1/images/Slide35.PNG)
-
-If you are willing to work with a system which is not as popular as the main players there is a benefit in code of server side rendering and a syntax which becomes comfortable to work with.
 

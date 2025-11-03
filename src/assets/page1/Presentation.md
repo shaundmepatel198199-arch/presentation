@@ -1,4 +1,3 @@
-## Svelte Presentation
 
 1. Title: Sora — The Future of AI Video
 
